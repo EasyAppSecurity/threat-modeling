@@ -1,0 +1,16 @@
+Client:
+ 	- clients running Internet Explorer 6.0 or later or FireFox 1.5 or later.
+
+Servers:
+	- All servers hosts:
+		- Windows server 2003 sp1
+		- Windows SErver 2003 Terminal Services
+		- Microsoft Distributed Transaction Coordinator (MSDTC)
+	- Web server host
+		- IIS 6.0
+		- ASN.NET 2.0 and .NET Framework 2.0
+		- Microsoft MEssage Queue 2.0
+	- Database server host
+		- SQL Server 2000
+		- SQL Server 2005
+		- Oracle 10g
