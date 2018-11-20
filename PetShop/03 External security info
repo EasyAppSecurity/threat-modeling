@@ -1,0 +1,9 @@
+ - Admins can change any setting in the system, including the Web service;
+
+ - The only ports open are TCP/3389 (for administration accessible only to other administration computers), 
+TCP/80 (for HTTP traffic accessible from the Internet), TCP/443
+(for HTTPS traffic accessible from the Internet), TCP/1433 and TCP/1521 (for database
+access that is accessible only by the Web server and by administration computers), and
+TCP/3372 (for MSDTC, which is accessible by all computers involved in order-processing
+transactions—these are usually just the Web server computers and database server
+computers);
