@@ -1,0 +1,37 @@
+ - No sensitive data is deliberately persisted on the client, but sensitive data is sent over
+SSL/TLS connections, and some browsers might locally cache data sent over these
+connections;
+
+ - DPAPI is used on the server to protect sensitive connection strings and encryption keys
+for non-administrators;
+
+ - The database server holds authentication information;
+
+ - The database server adequately protects authentication data by using database server
+authorization technology and, potentially, encryption;
+
+ - IIS 6.0 and ASP.NET enforce authentication correctly;
+
+ - Web service security configuration is held in Web.config files and can be manipulated
+only by valid administrators. This rule is enforced through operating system access
+control lists (ACLs);
+
+ - The server application setup program correctly configures the ACL for the Web.config
+file;
+
+ - Only valid admins administer any server by using Terminal Services or physically
+accessing the server when needed;
+
+ - Only valid admins have physical access to the Web and database servers;
+
+ - Browsing the Internet, reading e-mail messages, and using peer-to-peer or instant
+messaging applications on the servers is expressly prohibited;
+
+ - Databases are configured to use their native authentication protocols rather than
+operating system authentication protocols. For example, SQL Server uses Standard
+authentication and not Windows authentication. This is done for two main reasons.
+First, most users are Internet-based users, not Windows users. The second reason is
+performance—native authentication schemes are faster;
+
+ - The connection information for each database is stored in the application’s Web.config
+file and protected by using the Protected Configuration option, which uses DPAPI.
