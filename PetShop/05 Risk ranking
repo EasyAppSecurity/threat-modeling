@@ -1,0 +1,94 @@
+DREAD Risk = (Damage + Reproduciblity + Exploitability + Affected Users + Discoverability) / 5. 
+
+Damage Potential
+0 = Nothing
+5 = Information disclosure that could be used in combination with other vulnerabilities
+8 = Individual/employer non sensitive user data is compromised.
+9 = Administrative non sensitive data is compromised.
+10 = Complete system or data destruction.
+10 = Application unavailability.
+
+Reproducible
+0 = Very hard or impossible, even for administrators of the application.
+5 = Complex steps are required for authorized user.
+7.5 = Easy steps for Authenticated user
+10 = Just a web browser and the address bar is sufficient, without authentication.
+
+Exploit-ability
+2.5 = Advanced programming and networking knowledge, with custom or advanced attack tools.
+5 = Exploit exits in public, using available attack tools.
+9 = A Web Application Proxy tool
+10 = Just a web browser
+
+Affected Users
+0 = None
+2.5 individual/employer that is already compromised.
+6 = some users of individual or employer privileges, but not all.
+8 = Administrative users
+10 = All users
+
+Discover-ability
+0 = Very hard requires source code or administrative access.
+5 = Can figure it out by monitoring and manipulating HTTP requests
+8 = Details of faults like this are already in the public domain and can be easily discovered using a search engine.
+10 = the information is visible in the web browser address bar or in a form.
+--------------------------------------------------------------------------------------------------------------------
+Processes: (4.7.4 - (9+0+2.5+10+0)/4=4.3)
+	   (4.5 - (8+0+2.5+10+0)/5=4.1)
+	   (4.6 - (8+0+2.5+10+0)/5=4.1)
+	   (4.7.1 - (8+0+2.5+10+0)/5=4.1)
+	   (4.7.2 - (8+0+2.5+10+0)/5=4.1)
+	   (4.7.3 - (8+0+2.5+10+0)/5=4.1)
+	   (4.7.5 - (8+0+2.5+10+0)/5=4.1)
+           (4.7.9 - (5+0+2.5+9+0)/5=3.3)
+	   
+
+Data stores: (4.1 - 10+0+2.5+10+0)/5=4.5), 
+	     (4.3 - 10+0+2.5+10+0)/5=4.5), 
+	     (4.8 - 10+0+2.5+10+0)/5=4.5), 
+             (4.9 - 10+0+2.5+10+0)/5=4.5), 
+             (4.7.6 - 10+0+2.5+10+0)/5=4.5),
+	     (4.7.8 - 10+0+2.5+10+0)/5=4.5), 
+             (4.7.7 - 10+0+2.5+10+0)/5=4.5), 
+             (4.7.10 - 5+0+2.5+10+0)/5=3.5)
+
+Data flows: (1.0 -> 4.2 -> 1.0 - (8+0+9+6+5)/5=5.6) 
+            (4.1 -> 4.2 - (10+0+2.5+10+0)/5=4.5), 
+	    (4.3 -> 4.2 - (10+0+2.5+10+0)/5=4.5), 
+	    (4.2 -> 4.7.1 -> 4.2 - (10+0+2.5+10+0)/5=4.5)
+	    (3.0 -> 4.1 -> 3.0 - (9+0+2.5+10+0)/5=4.3), 
+            (3.0 -> 4.3 -> 3.0 - (9+0+2.5+10+0)/5=4.3), 
+            (2.0 -> 4.2 -> 2.0 - (0+0+9+0+5)/5=2.8), 
+
+
+External entities: (1.0 - (8+5+9+6+5)/5=6.6), 
+                   (2.0 - (0+10+10+0+5)/5=5), 
+                   (3.0 - (10+0+2.5+10+0)/5=4.5)
+--------------------------------------------------------------------------------------------------------------------
+
+(1.0 - (8+5+9+6+5)/5=6.6),
+(1.0 -> 4.2 -> 1.0 - (8+0+9+6+5)/5=5.6),
+(2.0 - (0+10+10+0+5)/5=5), 
+(4.1 -> 4.2 - (10+0+2.5+10+0)/5=4.5), 
+(4.3 -> 4.2 - (10+0+2.5+10+0)/5=4.5), 
+(4.2 -> 4.7.1 -> 4.2 - (10+0+2.5+10+0)/5=4.5)
+(3.0 - (10+0+2.5+10+0)/5=4.5)
+(4.1 - 10+0+2.5+10+0)/5=4.5), 
+(4.3 - 10+0+2.5+10+0)/5=4.5), 
+(4.8 - 10+0+2.5+10+0)/5=4.5), 
+(4.9 - 10+0+2.5+10+0)/5=4.5), 
+(4.7.6 - 10+0+2.5+10+0)/5=4.5),
+(4.7.8 - 10+0+2.5+10+0)/5=4.5), 
+(4.7.7 - 10+0+2.5+10+0)/5=4.5), 
+(4.7.10 - 5+0+2.5+10+0)/5=3.5),
+(3.0 -> 4.1 -> 3.0 - (9+0+2.5+10+0)/5=4.3), 
+(3.0 -> 4.3 -> 3.0 - (9+0+2.5+10+0)/5=4.3), 
+(4.7.4 - (9+0+2.5+10+0)/4=4.3)
+(4.5 - (8+0+2.5+10+0)/5=4.1)
+(4.6 - (8+0+2.5+10+0)/5=4.1)
+(4.7.1 - (8+0+2.5+10+0)/5=4.1)
+(4.7.2 - (8+0+2.5+10+0)/5=4.1)
+(4.7.3 - (8+0+2.5+10+0)/5=4.1)
+(4.7.5 - (8+0+2.5+10+0)/5=4.1)
+(4.7.9 - (5+0+2.5+9+0)/5=3.3)
+(2.0 -> 4.2 -> 2.0 - (0+0+9+0+5)/5=2.8)

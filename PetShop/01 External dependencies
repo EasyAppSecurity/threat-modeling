@@ -4,13 +4,37 @@ Client:
 Servers:
 	- All servers hosts:
 		- Windows server 2003 sp1
-		- Windows SErver 2003 Terminal Services
+		- Windows Server 2003 Terminal Services
 		- Microsoft Distributed Transaction Coordinator (MSDTC)
 	- Web server host
 		- IIS 6.0
-		- ASN.NET 2.0 and .NET Framework 2.0
-		- Microsoft MEssage Queue 2.0
+		- ASP.NET 2.0 and .NET Framework 2.0
+		- Microsoft Message Queue 2.0
 	- Database server host
 		- SQL Server 2000
 		- SQL Server 2005
 		- Oracle 10g
+----------------------------------------------------------------------------------
+CVE:
+Client:
+	Internet Explorer 6.0:
+		Vulnerabilities : 209 (171 - High, Score > 9.3, Gained Access Level - none, Access - remote, Complexity - medium, Authentication - Not required, STRIDE - +++++)
+	FireFox 1.5
+		Vulnerabilities : 728 (235 - High, Score > 9.3, Gained Access Level - none, Access - remote, Complexity - medium, Authentication - Not required, STRIDE - +++++)
+Server:
+	Windows server 2003 sp1:
+		Vulnerabilities : 418 (148 - High, Score > 9.3, Gained Access Level - none (Admin sometimes), Access - remote, Complexity - medium, Authentication - Not required, STRIDE - +++++)
+	Microsoft Distributed Transaction Coordinator (MSDTC):
+		Vuln: 1 ( 1- medium, score - 5.0, Gained Access Level - none, Access - remote, Complexity - low, Authentication - Not required, STRIDE - ----+)
+	IIS 6.0:
+		Vulnerabilities : 9 (3 - High, Score > 9.0, Gained Access Level - none (Admin sometimes), Access - remote, Complexity - low-medium, Authentication - Not required or Single system, STRIDE - +++++)
+	.NET Framework 2.0:
+		Vulnerabilities : 73 (42 - High, Score > 9.3, Gained Access Level - none (Admin sometimes), Access - remote, Complexity - low-medium, Authentication - Not required, STRIDE - +++++)
+	SQL Server 2000
+		Vulnerabilities : 84 (20 - High, Score > 9.0, Gained Access Level - Admin (none sometimes), Access - remote, Complexity - medium, sometimes low, Authentication - Not required (smt Single system), STRIDE - +++++)
+	SQL Server 2005
+		Vulnerabilities : 8 (7 - High, Score > 9.3, Gained Access Level - Admin, Access - remote, Complexity - medium, Authentication - Not required, STRIDE - +++++)
+	Oracle 10g
+		Vulnerabilities : 24 (4 - High, Score > 9.0, Gained Access Level - Admin (smt none), Access - remote, Complexity - low, Authentication - Not required-Single system, STRIDE - +++++)
+		
+	
