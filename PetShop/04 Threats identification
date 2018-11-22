@@ -23,12 +23,12 @@ Data stores:
 	- Audit-log data (4.7.10)
 
 Data flows:
-	- Web application reading configuration data (4.14.2)
-	- Web pages read by Web application (4.34.2)
-	- Anonymous user request/response (2.04.22.0)
-	- Pet Shop customer request/response (1.04.21.0)
-	- Admin reading, creating, updating Web application configuration data (3.04.13.0)
-	- Web application reading, creating, updating an order (4.24.7.14.2)
+	- Web application reading configuration data (4.1 -> 4.2)
+	- Web pages read by Web application (4.3 -> 4.2)
+	- Anonymous user request/response (2.0 -> 4.2 -> 2.0)
+	- Pet Shop customer request/response (1.0 -> 4.2 -> 1.0)
+	- Admin reading, creating, updating Web application configuration data (3.0 -> 4.1 -> 3.0)
+	- Web application reading, creating, updating an order (4.2 -> 4.7.1 -> 4.2)
 
 --------------------------------------------------------------------------------------------------------
 STRIDE:
@@ -38,17 +38,17 @@ Spoofing:
 Tampering:
 	- Processes: (4.2), (4.5), (4.6), (4.7.1), (4.7.2 and 4.7.3), (4.7.4 and 4.7.5), (4.7.9)
 	- Data stores: (4.1), (4.3), (4.8), (4.9), (4.7.6 and 4.7.8), (4.7.7), (4.7.10)
-	- Data flows: (4.14.2), (4.34.2), (2.04.22.0), (1.04.21.0), (3.04.13.0), (3.04.33.0), (4.24.7.14.2)
+	- Data flows: (4.1 -> 4.2), (4.3 -> 4.2), (2.0 -> 4.2 -> 2.0), (1.0 -> 4.2 -> 1.0), (3.0 -> 4.1 -> 3.0), (3.0 -> 4.3 -> 3.0), (4.2 -> 4.7.1 -> 4.2)
 Repudiation:
 	- External entities: (1.0), (2.0), (3.0)
 	- Data stores: (4.7.10)
 Information disclosure:
 	- Processes: (4.2), (4.5), (4.6), (4.7.1), (4.7.2 and 4.7.3), (4.7.4 and 4.7.5), (4.7.9)
 	- Data stores: (4.1), (4.3), (4.8), (4.9), (4.7.6 and 4.7.8), (4.7.7), (4.7.10)
-	- Data flows: (4.14.2), (4.34.2), (2.04.22.0), (1.04.21.0), (3.04.13.0), (3.04.33.0), (4.24.7.14.2)
+	- Data flows: (4.1 -> 4.2), (4.3 -> 4.2), (2.0 -> 4.2 -> 2.0), (1.0 -> 4.2 -> 1.0), (3.0 -> 4.1 -> 3.0), (3.0 -> 4.3 -> 3.0), (4.2 -> 4.7.1 -> 4.2)
 DoS:
 	- Processes: (4.2), (4.5), (4.6), (4.7.1), (4.7.2 and 4.7.3), (4.7.4 and 4.7.5), (4.7.9)
 	- Data stores: (4.1), (4.3), (4.8), (4.9), (4.7.6 and 4.7.8), (4.7.7), (4.7.10)
-	- Data flows: (4.14.2), (4.34.2), (2.04.22.0), (1.04.21.0), (3.04.13.0), (3.04.33.0), (4.24.7.14.2)
+	- Data flows: (4.1 -> 4.2), (4.3 -> 4.2), (2.0 -> 4.2 -> 2.0), (1.0 -> 4.2 -> 1.0), (3.0 -> 4.1 -> 3.0), (3.0 -> 4.3 -> 3.0), (4.2 -> 4.7.1 -> 4.2)
 EoP:
 	- Processes: (4.2), (4.5), (4.6), (4.7.1), (4.7.2 and 4.7.3), (4.7.4 and 4.7.5), (4.7.9)
